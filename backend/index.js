@@ -11,7 +11,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-// Database connection with mongoDb
+// Database connection with mongoDb  
 mongoose.connect("mongodb+srv://kumarnishantpradhan:007007007@cluster0.xbmelfq.mongodb.net/bazar").then(()=>{
    console.log("connection sucessful...");
 }).catch(()=>{
