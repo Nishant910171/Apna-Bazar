@@ -9,7 +9,7 @@ const cors = require("cors");
 
 
 app.use(express.json());
-app.use(cors(origin:'https://apna-bazar-backend.onrender.com'));
+app.use(cors({origin:'https://apna-bazar-backend.onrender.com'}));
 
 // Database connection with mongoDb  mongodb+srv://kumarnishantpradhan:007007007@cluster0.xbmelfq.mongodb.net/bazar
 mongoose.connect("mongodb+srv://kumarnishantpradhan:007007007@cluster0.xbmelfq.mongodb.net/bazar").then(()=>{
